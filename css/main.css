@@ -191,7 +191,6 @@ h1 {
 	border: 2px solid rgba(83, 88, 105, 0.1);
 	box-sizing: border-box;
 	border-radius: 5px;
-	width: 584px;
 	padding: 30px;
 }
 .number {
@@ -302,7 +301,7 @@ input[type="checkbox"] {
 	display: none;
 }
 labe {
-	display: inline;
+	box-sizing: content-box;
 }
 
 label::before {
@@ -340,7 +339,6 @@ checkbox  {
 }
 
 .form_subtract {
-	width: 408px;
 	height: 494px;
 	background: #F9FAFC;
 	background: #F9FAFC;
