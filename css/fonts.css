@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/Roboto/RobotoRegular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
