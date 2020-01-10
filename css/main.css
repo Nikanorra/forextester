@@ -134,7 +134,7 @@ a { color: grey;
 	border-radius: 5px;
 }
 .menu_green {
-	high: 100%;
+	height: 100%;
 }
 .menu_green li {
 	padding: 10px 10px;
@@ -215,21 +215,14 @@ h2 {
 .names {
 	margin-bottom: 38px;
 }
-.name_02 {
-	Font-Size: 12px;
-	Line-Height: 18px;
-	Line-Height: 150%;
-	Opacity: 70%;
-	Color: #3C3C3C;
-}
 .name_01 {
-	Font-Style: Bold;
-	Font-Size: 12px;
-	Line-Height: 18px;
-	Line-Height: 150%;
-	Opacity: 70%;
-	Color: #3C3C3C;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 150%;
+	color: #3C3C3C;
+	opacity: 0.7;
 }
+
 ::placeholder {
 	padding-left: 20px;
 }
@@ -251,17 +244,22 @@ form {
 	opacity: 0.5;
 	padding-left: 20px;
 }
-
+option {
+	font-size: 14px;
+	line-height: 150%;
+	opacity: 0.5;
+	padding-left: 20px;	
+}
 .cards_pics {
 	width: 16.7%;
 	height: 54px;
 	border: 1px solid rgba(83, 88, 105, 0.1);
-	padding: 10px;
+	padding: 10px 5px;
+	position: relative;
+	
 }
 .cards_pics div {
-	width: 72px;
-	height: 28px;
-	background-image: auto 72px;
+	height: 100%;
 	box-sizing: border-box;
 }
 .cards_pics:first-child {
@@ -273,78 +271,155 @@ form {
 	border-top-right-radius: 5px;
 }
 .cards_pics:hover {
-	border: 2px solid rgba(108, 205, 108, 0.5);
+	border: 1px solid rgba(108, 205, 108, 0.5);
 }
 .cards_pics_master {
 	background: url("../pics/mc.png") no-repeat; 
-	height: 20px;
+	display: block;
 }
 .cards_pics_wiretransfer {
+	display: block;
 	background: url("../pics/wt.png") no-repeat; 
-	height: 20px;
 }
 .cards_pics_qiwi {
 	background: url("../pics/qiwi.png") no-repeat;
-	height: 20px;
+	display: block;
 }
 .cards_pics_yandex {
 	background: url("../pics/yandex.png") no-repeat; 
-	height: 20px;
+	display: block;
 }
 .cards_pics_webmoney {
 	background: url("../pics/webmoney.png") no-repeat; 
-	height: 20px;
+	display: block;
 }
 .cards_pics_paypal {
 	background: url("../pics/pp.png") no-repeat; 
-	height: 20px;
+	display: block;
 }
 
-
-/*--checkbox--*/
-input[type="checkbox"] {
-	display: none;
-}
-labe {
-	box-sizing: content-box;
+/*start of CHECKBOX */
+.box {
+    position: relative;
+    margin-bottom: 1rem;
 }
 
-label::before {
-	content: "";
-	display: inline-block;
+.box__in {
+	-webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.box__lab {
+    padding-left: 25px;
+    font-size: 12px;
+    line-height: 150%;
+	color: #000000;
+	opacity: 0.5;
+}
+
+.box__lab:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
 	border: 1px solid rgba(83, 88, 105, 0.1);
 	border-radius: 5px;
-	width: 20px;
-	height: 20px;
-	margin-right: 20px;
-	padding-bottom: 10px;
-	vertical-align: center;
-	display: absolute;
+    position: absolute;
+    z-index: 1;
+	left: 0;
 }
-input[type="checkbox"]:checked + label::before { 
+
+.box__lab:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.box__in:checked + .box__lab:before {
 	background-color: rgba(83, 88, 105, 0.5);
 	content: "\2714";
+	color: rgba(83, 88, 105, 0.9);
 	text-align: center;
 }
-/*checkbox-end*/
-checkbox  {
-	padding-top: 5px;
+
+.box__in:checked + .box__lab:after {
+    opacity: 1;
 }
-.identity {
-	width: 100%;
+/*end of CHECKBOX */
+/*I have a COUPON start*/
+.last {
+	margin-top: 37px;
+}
+.box__lab01 {
+    padding-left: 25px;
+	font-size: 14px;
+	line-height: 150%;
+	color: #000000;
+}
+
+.box__lab01:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
 	border: 1px solid rgba(83, 88, 105, 0.1);
 	border-radius: 5px;
-	height: 54px;
-	margin-right: 30px;
+    position: absolute;
+    z-index: 1;
+	left: 0;
 }
 
+.box__lab01:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+}
 
-.form_subtract {
-	height: 494px;
-	background: #F9FAFC;
-	background: #F9FAFC;
-	border: 2px solid rgba(83, 88, 105, 0.1);
+.box__in:checked + .box__lab01:before {
+	background-color: rgba(83, 88, 105, 0.5);
+	content: "\2714";
+	color: rgba(83, 88, 105, 0.9);
+	text-align: center;
+}
+
+.box__in:checked + .box__lab:after {
+    opacity: 1;
+}
+.box__lab01 {
+	font-size: 14px;
+	line-height: 150%;
+	color: #000000;
+}
+/*I have a COUPON end*/
+.identity {
+	height: 54px;
+	border: 1px solid rgba(83, 88, 105, 0.1);
 	border-radius: 5px;
+}
+.identity_card {
+	width: 50%;
+	margin-right: 30px;
+}
+.identity_details {
+	width: 20%;
+	margin-right: 30px;
+}
+.identity_cvv {
+	width: 20%;
+	margin-right: 0px;
+}
+.form_subtract {
+	background: url("../pics/Subtract.png") no-repeat;
+	height: 100%;
 	padding: 30px;
 }
 .subtract01 {

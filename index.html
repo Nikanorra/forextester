@@ -110,11 +110,14 @@
 			<h2>Billing information</h2>
 		</div>
 		<div class="name d-flex">
-			<div class="name_01 mr-auto p-2">Full name</div>
+			<p class="name_01 mr-auto p-2">Full name</p>
 			<!--business-->
-				<input class="p-2" type="checkbox" id="business" name="">
-						<label class="name_02 p-2" for="business">Business purchase</label>
-			
+			<div class=" ml-auto p-2">
+			<form class="box">
+				<input class="box__in" type="checkbox" id="business" name="">
+						<label class="box__lab" for="business">Business purchase</label>
+			</form>
+			</div>
 		</div>
 			<div class="d-flex">
 				<form class ="d-flex"> <!--name-->
@@ -126,11 +129,14 @@
 			
 		
 		<div class="email d-flex">
-			<div class="name_01 mr-auto p-2">Email</div>
+			<p class="name_01 mr-auto p-2">Email</p>
 			<!--license-->
-			<input class="p-2" type="checkbox" id="license" name="">
-				<label class="name_02 p-2" for="license">License for another person</label>
-			
+			<div class=" ml-auto p-2">
+			<form class="box">
+				<input class="box__in" type="checkbox" id="license" name="">
+						<label class="box__lab" for="license">License for another person</label>
+			</form>
+			</div>			
 		</div>
 			<div class="d-flex">
 				<form class ="d-flex"> <!--email-->
@@ -140,12 +146,21 @@
 		<div class="country d-flex">
 			<div class="name_01 mr-auto p-2">Country</div>
 		</div>
-			<div class="d-flex">
-				<form class ="d-flex"> <!--country-->
-				<input class="form_billing" type="text" name="username" placeholder="Ukraine">
-				</form>
+		<div class="d-flex">
+			<form action="" class ="d-flex">
+			   <select name="country" class="form_billing">
+				<option value="" class="drop_menu">Ukraine</option>
+				<option value="" class="drop_menu">Poland</option>
+				<option value="" class="drop_menu">Russia</option>
+				<option value="" class="drop_menu">USA</option>
+				<option value="" class="drop_menu">Moldova</option>
+			   </select>
+			 </form>
 		</div>
-		<div style="border-top:1px dashed #e6e6e6;"></div>
+		<!---->
+	
+  <!---->
+		<div style="border-top:1px dashed #e6e6e6;"></div> <!--buttom-->
 	
 	<div class="payment">
 		<div class="names d-flex">
@@ -174,14 +189,14 @@
 		</div>
 		<div class="email d-flex">
 			<div class="name_01 mr-auto p-2">Card number</div>
-			<div class="name_02 ml-auto p-2">Expiration date </div>
-			<div class="name_02 ml-auto p-2">CVV</div>
+			<div class="name_01 ml-auto p-2">Expiration date </div>
+			<div class="name_01 ml-auto p-2">CVV</div>
 		</div>
 		<div class="d-flex">
-			<form class ="feedback d-flex bd-highlight">
-				<input class ="identity p-2 flex-grow-1 bd-highlight" type="text" name="username" placeholder="____ ____ ____ ____ ">
-				<input class ="identity p-2 bd-highlight" type="email" name="Email" placeholder="/">
-				<input class ="identity p-2 bd-highlight" type="tel" name="Phone" placeholder="***">
+			<form class ="feedback d-flex">
+				<input class ="identity identity_card" type="text" name="username" placeholder="____ ____ ____ ____ ">
+				<input class ="identity identity_details" type="email" name="Email" placeholder="/">
+				<input class ="identity identity_cvv" type="tel" name="Phone" placeholder="***">
 			</form>
 		</div>
 	</div>
@@ -263,9 +278,6 @@
 </div>
 <!--TOTAL end-->
 
-<!--<svg><polyline points="0,40,40,40,40,80,80,80,80,120,120,120,120,160" fill="white stroke="#BBC42A stroke-width="6"/>
-</svg>-->
-
 </div>
 </div>
 </div>
@@ -276,18 +288,20 @@
 <!--end of SUBTRACT & FORM-->
 
 <!--I have a coupon code-->
-<section>
+<section class="last">
 <div class="container">	
 <div class="col-7">	
-		<div class="d-flex">
-		<form class="p-2"> <!--I have a coupon code-->
-				<input class="" type="checkbox" id="coupon_box" name="">
-					<label class="p-2" for="coupon_box">I have a coupon code</label>
+		<div class="box d-flex">
+		<form class=""> <!--I have a coupon code-->
+				<input class="box__in" type="checkbox" id="coupon_box" name="">
+					<label for="coupon_box" class="box__lab01">I have a coupon code</label>
 			</form>
+			
 			<form action="" method="post" class="ml-auto p-2"><!--submit-->
 				<input class = "submit subb" type="submit" name="submit" value="SUBMIT ORDER">
 			</form>
 		</div>
+</div>
 </div>
 </div>
 </section>
