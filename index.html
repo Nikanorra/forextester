@@ -49,7 +49,7 @@
 
 <div class="menu02 ml-auto">
 	<nav class="menu_green">	
-			<ul class="menu_items d-flex">
+			<ul class="menu_items d-flex align-items-stretch">
 			<li class="download"><a href = "#">download</a></li>
 			<li class="by"><a href = "#">by</a></li>
 			</ul>
@@ -206,26 +206,30 @@
 
 <!--start SUBTRACT-->
 <div class="col-5">
-	<div class="form_subtract"> <!--конту SUBTRACT-->
+	<div class="form_subtract"> <!--фон SUBTRACT-->
 		<div class="sum">
 			<h2>Summary</h2>
 <!--первый продукт начало-->
 <div class="subtract01 d-flex">
-	<div class="subtract_prod01"></div><!--для картинки продукта-->
-	<div class="subtract_forex">
-		<h3>Forex Tester 4</h3>
-			<div class="subtract_count d-flex">
-				<div class="subtract_count01 d-flex">
-					<div class="minus">-</div><p>1<p><div class="add">+</div>
-				</div>
-			
-				<div class="d-flex ml-auto">
-					<p class="price_full">$299.000</p>
-					<p class="price_actual">$159.00</p>
-				</div>
+			<div class="p-2 d-flex">
+				<div class="subtract_prod01 p-2"></div><!--для картинки продукта-->
 			</div>
-	</div>
-</div>		
+	
+	<!--<div class="subtract_count p-2">--> <!--для + 1 - 299 и 159-->
+			<div class="subtract_count01 p-2 d-flex-col"> <!--для + 1 - -->
+				<h3>Forex Tester 4</h3>
+			<div class="d-flex">
+				<form class=""><button class="minus">-</button></form>
+				<p>1</p>
+				<form class=""><button class="add">+</button></form>
+			</div>
+			</div>
+			
+			<div class="ml-auto p-2 d-flex"> <!--299 и 159-->
+				<p class="price_full">$299.000</p>
+				<p class="price_actual">$159.00</p>
+			</div>
+</div>	
 <div class="d-flex"> 
 	<h3>Discount</h3>
 	<p class="subtract_sale ml-auto">-$140</p>
@@ -235,16 +239,19 @@
 
 <!--второй продукт начало-->
 <div class="subtract02 d-flex">
-	<div class="subtract_prod02"></div><!--для картинки продукта-->
-	<div class="subtract_data">
-	<div class="subtract_count_data d-flex">
-		<h3>VIP Data Service</h3>
-		<div class="d-flex justify-content-end">
-		<p class="price_full">$599.00</p>
-		<p class="price_actual">$199.00</p>
-		</div>
-		</div>
-		</div>
+			<div class="p-2 d-flex">
+				<div class="subtract_prod02 p-2"></div><!--для картинки продукта-->
+			</div>
+	
+	<!--<div class="subtract_count p-2">--> <!--для + 1 - 299 и 159-->
+			<div class="subtract_count01 p-2 d-flex-col"> <!--для + 1 - -->
+				<h3>VIP Data Service</h3>
+			</div>
+			
+			<div class="ml-auto p-2 d-flex"> <!--299 и 159-->
+				<p class="price_full">$599.000</p>
+				<p class="price_actual">$199.00</p>
+			</div>
 </div>		
 	<div class="d-flex"> 
 		<h3>Discount</h3>
