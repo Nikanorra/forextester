@@ -419,8 +419,7 @@ option {
 }
 .form_subtract {
 	background: url("../pics/Subtract.png") no-repeat;
-	background-size: 100%;
-	height: 100%;
+	background-size: contain;
 	padding: 30px;
 }
 .subtract01 {
