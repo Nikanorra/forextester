@@ -275,27 +275,27 @@ option {
 }
 .cards_pics_master {
 	background: url("../pics/mc.png") no-repeat; 
-	display: block;
+	background-size: contain;
 }
 .cards_pics_wiretransfer {
-	display: block;
+	background-size: contain;
 	background: url("../pics/wt.png") no-repeat; 
 }
 .cards_pics_qiwi {
 	background: url("../pics/qiwi.png") no-repeat;
-	display: block;
+	background-size: contain;
 }
 .cards_pics_yandex {
 	background: url("../pics/yandex.png") no-repeat; 
-	display: block;
+	background-size: contain;
 }
 .cards_pics_webmoney {
 	background: url("../pics/webmoney.png") no-repeat; 
-	display: block;
+	background-size: contain;
 }
 .cards_pics_paypal {
 	background: url("../pics/pp.png") no-repeat; 
-	display: block;
+	background-size: contain;
 }
 
 /*start of CHECKBOX */
@@ -419,8 +419,8 @@ option {
 }
 .form_subtract {
 	background: url("../pics/Subtract.png") no-repeat;
+	background-size: 100%;
 	height: 100%;
-	width: 100%;
 	padding: 30px;
 }
 .subtract01 {
