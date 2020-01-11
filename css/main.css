@@ -150,11 +150,14 @@ a {
 }
 .tester_text {
 	color: #030345;
-	margin-left: 29px;
+	margin-top: 32px;
+
+}
+.tester_text01 {
+	padding-bottom: 0.5%;
 }
 h1 {
 	font-family: RobotoRegular;
-	margin: 48px 0 18px 0;
 	font-size: 35px;
 	text-transform: uppercase;
 }
@@ -170,11 +173,7 @@ h1 {
 	color: #030345;
 }
 .payment00 {
-	display: reltive;
-	padding-top: 5%;
-	padding-left: 5%;
-	padding-bottom: 5%;
-	height: 70%;
+	margin-top: 32px;
 
 }
 
@@ -422,7 +421,6 @@ option {
 	background: url("../pics/product01.png") no-repeat;
 	width: 50px;
 	height: 50px;
-	border: 1px solid rgba(83, 88, 105, 0.1);
 }
 .subtract_forex {
 	margin-left: 20px;
@@ -442,10 +440,14 @@ h3 {
 }
 .subtract_prod02 {
 	background: url("../pics/product02.png") no-repeat;
+	background-size: cover;
+	margin-right: 20px;
 	width: 50px;
 	height: 50px;
-	border: 1px solid rgba(83, 88, 105, 0.1);
-	margin-right: 20px;
+
+}
+.img-thumbnail {
+	border-radius: 0!important;
 }
 .subtract_count01 p {
 	font-weight: bold;
