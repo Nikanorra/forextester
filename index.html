@@ -14,61 +14,89 @@
 <body>
 <header>
 <div class="container">
-<div class="first d-flex">
-<div class="menu01">
-	<nav class="menu">
-			<ul class="menu_items d-flex justify-content">
-			<li class="item">home</li>
-			<li class="item">features <i class="fas fa-caret-down"></i>
-				<ul class="menu_items_drop">
-					<li><a href = "#">features</a></li>
-					<li><a href = "#">features</a></li>
-					<li><a href = "#">features<a></li>
-				</ul>
-			</li>
-			<li class="item">how to use <i class="fas fa-caret-down"></i>
-				<ul class="menu_items_drop">
-					<li><a href = "#">how to use</a></li>
-					<li><a href = "#">how to use</a></li>
-					<li><a href = "#">how to use</a></li>
-				</ul>
-			</li>
-			<li class="item">historical data</li>
-			<li class="item">forum</li>
-			<li class="item">affiliates <i class="fas fa-caret-down"></i>
-				<ul class="menu_items_drop">
-					<li><a href = "#">affiliates</a></li>
-					<li><a href = "#">affiliates</a></li>
-					<li><a href = "#">affiliates</a></li>
-				</ul>
-			</li>
-			<li class="item">contact us</li>
-			</ul>
-	</nav>
-</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light<!--navbar-expand-lg размер для зжатия-->">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="item nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
 
-<div class="menu02 ml-auto">
-	<nav class="menu_green">	
-			<ul class="menu_items d-flex align-items-stretch">
-			<li class="download"><a href = "#">download</a></li>
-			<li class="by"><a href = "#">by</a></li>
-			</ul>
-	</nav>
-</div>
+ <li class="item nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          features
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
 
-
+ <li class="item nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          how to use
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+	  
+      <li class="item nav-item">
+        <a class="nav-link" href="#">historical data</a>
+      </li>
+	  
+      <li class="item nav-item">
+        <a class="nav-link" href="#">forum</a>
+      </li>
+	  
+      <li class="item nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          affiliates
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="item nav-item">
+        <a class="nav-link" href="#">historical data</a>
+      </li>
+	  
+      <li class="item nav-item">
+        <a class="nav-link" href="#">forum</a>
+      </li>
+</ul>
 </div>
+<div class="menu_green collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+<ul class="navbar-nav ">
+      <li class="download nav-item">
+        <a class="nav-link" href="#">download</a>
+      </li>
+	  
+      <li class="by nav-item">
+        <a class="nav-link" href="#">by</a>
+      </li>
+	  
+    </ul>
+  </div>
+ </nav>
 </div>
 </header>
 
 
 
 <!--start TESTER-->
-<section>
+<section class="slide">
 <div class="container">
 <div class="tester">
 <div class="row">
-<div class="col-6 d-flex">
+<div class="col-lg-6 d-flex">
 <div class="tester01 d-flex">
 <img src="pics/forex.png" alt="forex tester" class="tester_pic">
 <div class="tester_text flex-column">
@@ -78,17 +106,20 @@
 </div>
 </div>
 
-<div class="col-5">
+<div class="col-lg-5">
+<div class="payment00">
 <div class="payment01">
-<img src="pics/visa.png">
-<img src="pics/mastercard.png">
+<img src="pics/visa.png" class="">
+<img src="pics/mastercard.png" class="">
 </div>
 <div class="payment02">
-<img src="pics/paypal.png">
-<img src="pics/wiretransfer.png">
+<img src="pics/paypal.png" class="">
+<img src="pics/wiretransfer.png" class="">
 </div>
 </div>
-<div class="col-5">
+</div>
+
+<div class="col-lg-5">
 <p class="buy">buy forex tester 4</p>
 </div>
 
@@ -216,21 +247,30 @@
 			</div>
 	
 	<!--<div class="subtract_count p-2">--> <!--для + 1 - 299 и 159-->
-			<div class="subtract_count01 p-2 d-flex-col"> <!--для + 1 - -->
+		<div class="subtract_count01 p-2 d-flex-col"> <!--для + 1 - -->
 				<h3>Forex Tester 4</h3>
-			<div class="d-flex">
-				<form class=""><button class="minus">-</button></form>
-				<p>1</p>
-				<form class=""><button class="add">+</button></form>
-			</div>
-			</div>
+				<div class="d-flex">
+					<form class="p-2">
+						<input class ="minus" type="submit" name="submit" value="-">
+					</form>
+					
+					<p class="p-2">1</p>
+					
+					<form class="p-2">
+						<input class ="plus" type="submit" name="submit" value="+">
+					</form>
+				
+				</div>
+		</div>
+			
+			
 			
 			<div class="ml-auto p-2 d-flex"> <!--299 и 159-->
 				<p class="price_full">$299.000</p>
 				<p class="price_actual">$159.00</p>
 			</div>
 </div>	
-<div class="d-flex"> 
+<div class="discount d-flex"> 
 	<h3>Discount</h3>
 	<p class="subtract_sale ml-auto">-$140</p>
 </div>
@@ -253,7 +293,7 @@
 				<p class="price_actual">$199.00</p>
 			</div>
 </div>		
-	<div class="d-flex"> 
+	<div class="discount d-flex"> 
 		<h3>Discount</h3>
 		<p class="subtract_sale ml-auto">-$400.88</p>
 	</div>
@@ -296,18 +336,21 @@
 
 <!--I have a coupon code-->
 <section class="last">
-<div class="container">	
+<div class="container">
+<div class="row">	
 <div class="col-lg-7">	
+
 		<div class="box d-flex">
-		<form class=""> <!--I have a coupon code-->
-				<input class="box__in" type="checkbox" id="coupon_box" name="">
-					<label for="coupon_box" class="box__lab01">I have a coupon code</label>
-			</form>
-			
-			<form action="" method="post" class="ml-auto p-2"><!--submit-->
-				<input class = "submit subb" type="submit" name="submit" value="SUBMIT ORDER">
-			</form>
+		<form class="p-2"> <!--I have a coupon code-->
+			<input class="box__in" type="checkbox" id="coupon_box" name="">
+				<label for="coupon_box" class="box__lab01">I have a coupon code</label>
+		</form>	
+		<form class="p-2"> <!--SUBMIT ORDER-->
+			<input class ="subb" type="submit" name="submit" value="SUBMIT ORDER">
+		</form>
 		</div>
+	
+</div>
 </div>
 </div>
 </div>

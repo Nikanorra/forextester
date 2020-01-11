@@ -78,15 +78,17 @@ html, body {
 	padding: 0;
 	margin: 0 auto;
 	font-family: 'Open Sans'; /*sans-serif;*/
-	color: grey;
+	color: white!important;
+
 }
 
 div {
 	box-sizing: border-box;
 }
 
-a { color: grey;
+a { 
 	text-decoration: none;
+	color: grey;
 }
 
 /*ОБЩИЙ КОНТЕЙНЕР*/ 
@@ -98,62 +100,48 @@ a { color: grey;
 
 
 /*header*/
-.first {
+
+/*MENU*/
+.navbar-expand-lg  {
+	color: white!important;
+}
+.navbar {
+	box-sizing: content;
 	font-size: 10px;
 	text-transform: uppercase;
-	box-shadow: 0 10px 12px -10px rgba(0,0,0,1);
-	margin-bottom: 10px;
-}
-/*MENU*/
-.menu_items {
-	position: relative;
+	box-shadow: 0 10px 12px -10px rgba(0,0,0,1)!important;
+	padding: 0!important;
 }
 
 .item {
-	padding: 10px 17px ;
 	border-right: 1px solid #e1e1e1;
 }
-/*MENU drop*/
-.menu_items_drop {
-	position: absolute;
-	background-color: #fff;
-	opacity: 0;
-}
-.menu_items_drop a {
-	text-decoration: none;
-}
-.item:hover .menu_items_drop {
-	top: 1px;
-	opacity: 1;
-	background-color: #e1e1e1;
-}
-.menu_items_drop li  {
-	display: relative;
-	padding: 3px 3px;
-	border: 1px solid #e1e1e1;
-	border-radius: 5px;
-}
-.menu_green {
-	height: 100%;
-}
+
+/*GREEN MENU*/
+
 .menu_green li {
-	padding: 10px 10px;
 	border: 1px solid #008f53;
 	border-top: none;
 	color: white;
 }
-.menu_green a {
-	color: white;
-}
 .download {
 	background-color: #7fa822;
+	color: white!important;
+}
+.menu_green a { 
+	color: white!important;
 }
 .by {
 	background-color: #97c352;
+	color: white!important;
 }
+/*end of GREEN MENU*/
 /*TESTER*/
+.slide {
+	margin-top: 15px;
+}
 .tester {
-	height: 200px;
+	width: 100%;
 	background-color: #ebebeb;
 	margin-bottom: 25px;
 }
@@ -181,8 +169,13 @@ h1 {
 	text-transform: uppercase;
 	color: #030345;
 }
-.payment01 {
-	margin-top: 30px;
+.payment00 {
+	display: reltive;
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-bottom: 5%;
+	height: 70%;
+
 }
 
 /*FORM*/
@@ -256,7 +249,6 @@ option {
 	border: 1px solid rgba(83, 88, 105, 0.1);
 	padding: 10px 5px;
 	position: relative;
-	
 }
 .cards_pics div {
 	height: 100%;
@@ -301,13 +293,13 @@ option {
 /*start of CHECKBOX */
 .box {
     position: relative;
-    margin-bottom: 1rem;
 }
 
 .box__in {
 	-webkit-appearance: none;
     appearance: none;
     position: absolute;
+	opacity: 0.5;
 }
 
 .box__lab {
@@ -345,21 +337,24 @@ option {
 	content: "\2714";
 	color: rgba(83, 88, 105, 0.9);
 	text-align: center;
+	vertical-align: middle;
 }
 
 .box__in:checked + .box__lab:after {
     opacity: 1;
 }
 /*end of CHECKBOX */
+
 /*I have a COUPON start*/
 .last {
 	margin-top: 37px;
 }
 .box__lab01 {
     padding-left: 25px;
-	font-size: 14px;
-	line-height: 150%;
+    font-size: 14px;
+    line-height: 150%;
 	color: #000000;
+
 }
 
 .box__lab01:before {
@@ -389,15 +384,11 @@ option {
 	content: "\2714";
 	color: rgba(83, 88, 105, 0.9);
 	text-align: center;
+	vertical-align: middle;
 }
 
-.box__in:checked + .box__lab:after {
+.box__in:checked + .box__lab01:after {
     opacity: 1;
-}
-.box__lab01 {
-	font-size: 14px;
-	line-height: 150%;
-	color: #000000;
 }
 /*I have a COUPON end*/
 .identity {
@@ -426,10 +417,7 @@ option {
 .subtract_text_last {
 	margin-bottom: 65%;
 }
-.subtract01 {
-	margin-top: 25px;
-	margin-top: 16px;
-}
+
 .subtract_prod01 {
 	background: url("../pics/product01.png") no-repeat;
 	width: 50px;
@@ -446,7 +434,12 @@ h3 {
 	line-height: 150%;
 	color: #000;
 }
-
+.discount {
+	padding-top: 8px;
+}
+.subtract02 {
+	margin-top: 16px;
+}
 .subtract_prod02 {
 	background: url("../pics/product02.png") no-repeat;
 	width: 50px;
@@ -457,42 +450,27 @@ h3 {
 .subtract_count01 p {
 	font-weight: bold;
 	font-size: 14px;
-	line-height: 150%;
 	color: #0C2564;
 	text-align: center;
-	vertical-align: center;
+	vertical-align: middle;
 }
-.add {
-	font-style: normal;
+.plus {
 	font-weight: bold;
 	font-size: 14px;
-	line-height: 150%;
-	color: #000000;
-	opacity: 0.5;
 	width: 18px;
 	height: 18px;
-	padding-bottom: 2px;
+	color: #000000;
+	opacity: 0.5;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	text-align: center;
-	margin-left: 10px;
 }
 .minus {
-	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
-	line-height: 150%;
-	color: #000000;
-	opacity: 0.5;
 	width: 18px;
 	height: 18px;
-	padding-bottom: 2px;
+	color: #000000;
+	opacity: 0.5;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	text-align: center;
-	margin-right: 10px;
-}
-.subtract_count {
-	margin-top: 10px;
-	margin-bottom: 14px;
 }
 
 .price_full {	
@@ -520,12 +498,15 @@ h3 {
 	padding-top: 10px;
 }
 .payment_term {
-	margin-bottom: 30px;
+	margin-top: 10px;
+	margin-bottom: 24px;
 }
-
-/*TOTAL*/
+.subtract_text {
+	margin: 5px 0;
+}
+/*end of TOTAL*/
 .subtract_total {
-	margin-top: 30px;
+	margin-top: 24px;
 }
 .subtract_total p {
 	font-weight: bold;
@@ -541,13 +522,7 @@ h3 {
 .total_sum span {
 	font-weight: bold;
 }
-
-.coup {
-	font-size: 14px;
-	line-height: 150%;
-	margin-left: 15px;
-	margin-right: 15px;
-}
+/*start of TOTAL*/
 .subb {
 	width: 322px;
 	height: 54px;
@@ -557,4 +532,5 @@ h3 {
 	font-size: 16px;
 	line-height: 180%;
 	color: #FFFFFF;
+	border: none;
 }
