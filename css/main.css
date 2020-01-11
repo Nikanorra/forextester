@@ -151,7 +151,7 @@ a {
 .tester_text {
 	color: #030345;
 	margin-top: 32px;
-
+	width: 45%;
 }
 .tester_text01 {
 	padding-bottom: 0.5%;
@@ -174,7 +174,6 @@ h1 {
 }
 .payment00 {
 	margin-top: 32px;
-
 }
 
 /*FORM*/
